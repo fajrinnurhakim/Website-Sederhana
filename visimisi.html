@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="icon" href="./asset/image/logo.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header1">
+            <span><i class="fa fa-map-marker"></i> Jl.Sisingamangaraja Kebayoran Baru - Jakarta Selatan</span>
+            <span><i class="fa fa-envelope"></i> humas@al-azhar.or.id</span>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav id="nav" class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo"><a href=""><img src="./asset/image/logo.png" alt="logo" class="logo1"></a></label>
+        <ul id="navbarnav">
+            <li><a href="./index.html#home" class="menu">Beranda</a></li>
+            <li><a href="./index.html#tentang" class="menu">Tentang Kami</a></li>
+            <li><a href="./kontak.html" class="menu">Kontak</a></li>
+            <li><a href="./visimisi.html" class="menu active">Visi Misi</a></li>
+            <li><a href="./biografi.html" class="menu">Biografi</a></li>
+            <li><a href="./sejarah.html" class="menu">Sejarah</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="vimi" class="vimi">
+            <div class="visi">
+                <h1>Visi</h1>
+                <p>Terwujudnya mutu pendidikan luar sekolah yang berkualitas, beriman, bertaqwa dan berprestasi dan
+                    sebagai
+                    sebagai sebuah Lembaga Pendidikan dan Pelatihan yang unggul, berkualitas dan mandiri dengan lulusan
+                    yang
+                    mampu bersaing dengan baik dalam negeri maupun luar negeri.</p>
+            </div>
+            <div class="misi">
+                <h2>Misi</h2>
+                <ol>
+                    <li>Menciptakan pendidikan kondusif dalam upaya mengembangkan generasi yang berakhlak mulia, sehat
+                        jasmani
+                        rohani, cerdas, trampil dan mandiri.</li>
+                    <li>Menanamkan semangat kreatifitas kepada warga belajar</li>
+                    <li>Melaksanakan pembelajaran dan bimbingan secara efektif dan efisien</li>
+                    <li>Menyiapkan SDM berkualitas sesuai dengan tuntutan zaman. </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer1">
+        <div class="footer-content">
+            <div class="footer-content1">
+                <img src="./asset/image/logo.png" alt="">
+            </div>
+            <div class="footer-content2">
+                <a href="https://www.instagram.com/ypi_alazhar/?hl=id"><i class="fa fa-instagram"></i> @ypi_alazhar</a>
+                <a href="https://api.whatsapp.com/send/?phone=6285772714514&text&type=phone_number&app_absent=0"><i
+                        class="fa fa-whatsapp"></i> 0857-7271-4514</a>
+                <a href="https://www.facebook.com/YayasanPesantrenIslamAlAzhar/?locale=id_ID"><i
+                        class="fa fa-facebook-square"></i> YPI Al Azhar</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./asset/main.js"></script>
+    <script>
+        // Saat pengguna menggulir halaman, jalankan myFunction
+        window.onscroll = function () { myFunction() };
+
+        // ambil DOM navbar
+        var navbar = document.getElementById("nav");
+
+        // ambil posisi offset navbar
+        var sticky = navbar.offsetTop;
+
+        // Tambahkan kelas sticky ke navbar saat Anda mencapai posisi gulirnya. Hapus "lengket" saat Anda meninggalkan posisi gulir
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="icon" href="./asset/image/logo.png">
+    <title>Al Azhar</title>
+</head>
+<!--  -->
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <span><i class="fa fa-map-marker"></i> Jl.Sisingamangaraja Kebayoran Baru - Jakarta Selatan</span>
+            <span><i class="fa fa-envelope"></i> humas@al-azhar.or.id</span>
+        </div>
+    </header>
+    <!-- Navigasi Bar -->
+    <nav id="nav" class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo"><a href=""><img src="./asset/image/logo.png" alt="logo" class="logo1"></a></label>
+        <ul id="navbarnav">
+            <li><a href="./index.html#home" class="menu active">Beranda</a></li>
+            <li><a href="#tentang" class="menu">Tentang Kami</a></li>
+            <li><a href="./kontak.html" class="menu">Kontak</a></li>
+            <li><a href="./visimisi.html" class="menu">Visi Misi</a></li>
+            <li><a href="./biografi.html" class="menu">Biografi</a></li>
+            <li><a href="./sejarah.html" class="menu">Sejarah</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slideshow container -->
+    <div id="home" class="slideshow-containerhome">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./asset/image/1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./asset/image/2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./asset/image/3.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous button -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+
+    <main>
+        <article>
+            <section class="jumlah shadow curve">
+                <div>
+                    <i style="color: #b65fcf;" class="fa fa-user"></i>
+                    <h4>5592</h4>
+                    <p>Jumlah Murid</p>
+                </div>
+                <div>
+                    <i style="color: #b65fcf;" class="fa fa-graduation-cap"></i>
+                    <h4>2200</h4>
+                    <p>Jumlah Guru & Pegawai</p>
+                </div>
+                <div>
+                    <i style="color: #b65fcf;" class="fa fa-bank"></i>
+                    <h4>1239</h4>
+                    <p>Jumlah Sekolah Al Azhar</p>
+                </div>
+            </section>
+            <section id="testimoni" class="slideshow-containerTestimoni">
+            </section>
+            <section id="tentang" class="tentang">
+                <h2>Tentang Kami</h2>
+                <iframe width="100%" height="400px" src="https://www.youtube.com/embed/6F5zWAq4FhI?start=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+                <p>Yayasan Pesantren Islam (YPI) Al Azhar didirikan pada 7 April 1952 oleh 14 orang tokoh Islam dan
+                    Pemuka Masyarakat di Jakarta. Salah seorang pencetus gagasan pendirian yayasan ini adalah dr.
+                    Syamsuddin, Menteri Sosial RI ketika itu, yang didukung oleh Sjamsuridjal yang pada waktu itu adalah
+                    Walikota Jakarta Raya.</p>
+            </section>
+            <section class="galeri shadow curve">
+                <h2>Galeri</h2>
+                <div class="gallery-image ">
+                    <div class="img-box">
+                        <img src="./asset/image/g1.jpg" alt="" />
+                    </div>
+                    <div class="img-box">
+                        <img src="./asset/image/g2.jpg" alt="" />
+                    </div>
+                    <div class="img-box">
+                        <img src="./asset/image/g3.jpg" alt="" />
+                    </div>
+                    <div class="img-box">
+                        <img src="./asset/image/g4.jpg" alt="" />
+                    </div>
+                    <div class="img-box">
+                        <img src="./asset/image/g5.jpg" alt="" />
+                    </div>
+                    <div class="img-box">
+                        <img src="./asset/image/g6.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <section class="berita shadow curve">
+                <div class="berita-content">
+                    <h4>Berita Terkini</h4>
+                    <div class="card shadow curve">
+                        <div>
+                            <img src="./asset/image/berita1.jpeg" alt="image">
+                        </div>
+                        <div>
+                            <h4>Pendaftaran YPI Al Azhar</h4>
+                            <p>Lorem ipsum dolor sit dolor sit amet, conse ctetur adipis icing elit...</p>
+                            <a href="">Lihat Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card shadow curve">
+                        <div>
+                            <img src="./asset/image/berita2.jpg" alt="image">
+                        </div>
+                        <div>
+                            <h4>Lomba Murotal YPI Al Azhar</h4>
+                            <p>Lorem ipsum dolor sit dolor sit amet, conse ctetur adipis icing elit...</p>
+                            <a href="">Lihat Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card shadow curve">
+                        <div>
+                            <img src="./asset/image/berita3.jpg" alt="image">
+                        </div>
+                        <div>
+                            <h4>Wisuda YPI Al Azhar</h4>
+                            <p>Lorem ipsum dolor sit dolor sit amet, conse ctetur adipis icing elit...</p>
+                            <a href="">Lihat Selengkapnya</a>
+                        </div>
+                    </div>
+                    <a href="">Lihat Berita Lain...</a>
+                </div>
+            </section>
+            <section class="kalender shadow curve">
+                <div class="kalender-content">
+                    <h4>Kalender Akademik Bulan Juni</h4>
+                    <div class="card curve shadow">
+                        <p class="tanggal">2 Juni 2023-14 Juni 2023</p>
+                        <h4>UAS</h4>
+                        <p><i class="fa fa-map-marker"></i> Kelas Al-Azhar</p>
+                        <p><i class="fa fa-clock-o"></i> 08:00-14:00 WIB</p>
+                    </div>
+                    <div class="card curve shadow">
+                        <p class="tanggal">15 Juni 2023-22 Juni 2023</p>
+                        <h4>Kelas Meeting</h4>
+                        <p><i class="fa fa-map-marker"></i> Lapangan Al-Azhar</p>
+                        <p><i class="fa fa-clock-o"></i> 08:00-14:00 WIB</p>
+                    </div>
+                    <div class="card curve shadow">
+                        <p class="tanggal">23 Juni 2023</p>
+                        <h4>Pembagian Raport</h4>
+                        <p><i class="fa fa-map-marker"></i> Kelas Al-Azhar</p>
+                        <p><i class="fa fa-clock-o"></i> 09:00-10:00 WIB</p>
+                    </div>
+                    <a href="">Lihat Lainnya...</a>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+
+
+    <footer class="footer1">
+        <div class="footer-content">
+            <div class="footer-content1">
+                <img src="./asset/image/logo.png" alt="">
+            </div>
+            <div class="footer-content2">
+                <a href="https://www.instagram.com/ypi_alazhar/?hl=id"><i class="fa fa-instagram"></i> @ypi_alazhar</a>
+                <a href="https://api.whatsapp.com/send/?phone=6285772714514&text&type=phone_number&app_absent=0"><i
+                        class="fa fa-whatsapp"></i> 0857-7271-4514</a>
+                <a href="https://www.facebook.com/YayasanPesantrenIslamAlAzhar/?locale=id_ID"><i
+                        class="fa fa-facebook-square"></i> YPI Al Azhar</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./asset/main.js"></script>
+    <script>
+        // Saat pengguna menggulir halaman, jalankan myFunction
+        window.onscroll = function () { myFunction() };
+
+        // ambil DOM navbar
+        var navbar = document.getElementById("nav");
+
+        // ambil posisi offset navbar
+        var sticky = navbar.offsetTop;
+
+        // Tambahkan kelas sticky ke navbar saat Anda mencapai posisi gulirnya. Hapus "lengket" saat Anda meninggalkan posisi gulir
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        // Script navbar yang aktif
+        var header = document.getElementById("navbarnav");
+        var btns = header.getElementsByClassName("menu");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
